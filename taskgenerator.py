@@ -8,7 +8,7 @@ def generate_lua_tasks():
     tasks = []
 
     basepath = os.path.dirname(__file__)
-    luafile = os.path.abspath(os.path.join(basepath, "..", "tasks.lua"))
+    luafile = os.path.abspath(os.path.join(basepath, "tasks.lua"))
 
     #extract info from text file
     with open(os.path.abspath(os.path.join(basepath,"tasks.txt"))) as file :
