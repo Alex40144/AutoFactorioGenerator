@@ -1,9 +1,6 @@
 #this copys game files into correct folder
 import os, glob, shutil
 import json
-import taskgenerator
-
-taskgenerator.generate_lua_tasks()
 
 with open("info.json", 'r') as infofile:
     data=infofile.read()

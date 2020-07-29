@@ -4,7 +4,7 @@
 
 
 def generate_lua_tasks():
-    import os
+    import os, shutil
     tasks = []
 
     basepath = os.path.dirname(__file__)
@@ -33,6 +33,7 @@ def generate_lua_tasks():
     luafile.close()
 
     print("updated tasks.lua")
+    shutil.copy("tasks.lua", r'C:\Users\giddy\Desktop\repos\AutoFactorio')
 
 if __name__ == "__main__":
     generate_lua_tasks()
