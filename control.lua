@@ -21,13 +21,13 @@ script.on_event(defines.events.on_player_mined_entity, function(event)
     position = event.entity.bounding_box
     position = {x = (position.right_bottom.x + position.left_top.x) / 2 , y = (position.right_bottom.y + position.left_top.y) / 2}
     game.print("mined at " .. serpent.line(position))
-    game.write_file("tasks.txt", "{\"mine\", {x=" .. position.x .. ", y=" .. position.y .. "}\n", true)
+    game.write_file("tasks.txt", "{\"mine\", {x=" .. position.x .. ", y=" .. position.y .. "}}\n", true)
 end)
 
 script.on_event(defines.events.on_pre_player_crafted_item, function(event)
     item = event.recipe.name
     game.print("crafted " .. serpent.line(item))
-    game.write_file("tasks.txt", "{\"craft\", \"" .. item .. "\", 1\n", true)
+    game.write_file("tasks.txt", "{\"craft\", \"" .. item .. "\", 1}\n", true)
 end)
 
 script.on_event("log-put", function(event)
