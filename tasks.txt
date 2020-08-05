@@ -1,15 +1,16 @@
+{"research"}
+{"speed", 2}
 {"walk", {x=-4.640625, y=-21.265625}}
 {"mine", {x=-5.625, y=-23.6875}}
 {"walk", {x=-16.48046875, y=28.27734375}}
-{"craft", "stone-furnace", 1}
+{"craft", "stone-furnace", -1}
 {"build", {x=-20, y=29}, "stone-furnace", 0}
 {"build", {x=-22, y=29}, "burner-mining-drill", 2}
-{"put", "burner-mining-drill", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=29}, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
 {"walk", {x=-10.11328125, y=25.47265625}}
 {"mine", {x=-9.0625, y=25.0625}}
 {"walk", {x=-8.63671875, y=21.47265625}}
-{"put", "burner-mining-drill", count, {x=-7.9375, y=21.625}, defines.inventory.**inventory**}
 {"mine", {x=-7.9375, y=21.625}}
 {"mine", {x=-7.75, y=20.5625}}
 {"walk", {x=-5.23828125, y=19.21484375}}
@@ -18,127 +19,175 @@
 {"walk", {x=3.57421875, y=26.26953125}}
 {"mine", {x=4.4375, y=26.375}}
 {"mine", {x=3.4375, y=25.4375}}
+{"walk", {x=-2, y=30}}
+{"mine", {x=-2.5, y=31}}
+{"mine", {x=-2.5, y=29}}
+{"walk", {x=1.5, y=34}}
+{"mine", {x=0, y=34}}
+{"walk", {x=0.5, y=38}}
+{"mine", {x=2, y=38}}
 {"walk", {x=-18.25, y=29.8359375}}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"craft", "burner-mining-drill", 1}
-{"build", {x=-20, y=31}, "entity-ghost", 0}
-{"build", {x=-20, y=33}, "entity-ghost", 0}
-{"build", {x=-20, y=35}, "entity-ghost", 0}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"craft", "burner-mining-drill", -1}
 {"walk", {x=-18.25, y=34.2890625}}
 {"build", {x=-20, y=31}, "stone-furnace", 0}
 {"build", {x=-22, y=31}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"craft", "burner-mining-drill", -1}
 {"build", {x=-20, y=33}, "stone-furnace", 0}
 {"build", {x=-22, y=33}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"craft", "burner-mining-drill", -1}
 {"build", {x=-20, y=35}, "stone-furnace", 0}
-{"build", {x=-22, y=35}, "stone-furnace", 0}
-{"mine", {x=-22, y=35}}
 {"build", {x=-22, y=35}, "burner-mining-drill", 2}
-{"walk", {x=-18.25, y=31.0234375}}
-{"put", "burner-mining-drill", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=31}, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
 {"walk", {x=3.578125, y=-29.0703125}}
 {"mine", {x=3.4375, y=-30.375}}
+{"mine", {x=0.5, y=-30.5}}
 {"walk", {x=1.99609375, y=-32.28515625}}
 {"mine", {x=0.125, y=-32.75}}
-{"craft", "stone-furnace", 1}
+{"craft", "stone-furnace", -1}
+{"walk", {x=0.5, y=-28}}
+{"mine", {x=0.5, y=-26.5}}
+{"walk", {x=-4.5, y=-27}}
+{"mine", {x=-6, y=-26.5}}
+{"craft", "stone-furnace", -1}
 {"walk", {x=-18.296875, y=28.984375}}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
+{"walk", {x=-18.296875, y=38.984375}}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"build", {x=-20, y=37}, "stone-furnace", 0}
 {"build", {x=-20, y=39}, "stone-furnace", 0}
 {"build", {x=-20, y=41}, "stone-furnace", 0}
 {"build", {x=-20, y=43}, "stone-furnace", 0}
 {"build", {x=-20, y=45}, "stone-furnace", 0}
 {"build", {x=-20, y=47}, "stone-furnace", 0}
-{"walk", {x=-18.296875, y=46.9453125}}
-{"craft", "burner-mining-drill", 1}
-{"walk", {x=-18.296875, y=37}}
-{"walk", {x=-18.296875, y=47.6875}}
+{"walk", {x=-18.296875, y=39}}
+{"craft", "burner-mining-drill", -1}
+{"walk", {x=-23.5, y=41}}
+{"mine", {x=-23.5, y=43}}
 {"build", {x=-22, y=37}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
 {"build", {x=-22, y=39}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
 {"build", {x=-22, y=41}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
 {"build", {x=-22, y=43}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
 {"build", {x=-22, y=45}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"walk", {x=-24, y=27}}
+{"walk", {x=-18, y=27}}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"craft", "burner-mining-drill", -1}
+{"walk", {x=-18, y=45}}
 {"build", {x=-22, y=47}, "burner-mining-drill", 2}
-{"put", "burner-mining-drill", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=29}, defines.inventory.**inventory**}
 {"walk", {x=-18.296875, y=30.3203125}}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+#{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-18.296875, y=47.2421875}}
 {"walk", {x=7.4375, y=76.6875}}
 {"mine", {x=8.375, y=78.3125}}
 {"walk", {x=16.046875, y=76.6875}}
 {"mine", {x=17.75, y=76.3125}}
-{"craft", "stone-furnace", 1}
+{"craft", "stone-furnace", -1}
 {"walk", {x=-17.70703125, y=47.68359375}}
 {"walk", {x=-17.70703125, y=29.72265625}}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"craft", "burner-mining-drill", 1}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"craft", "burner-mining-drill", 4}
+{"craft", "burner-mining-drill", -1}
 {"walk", {x=-16.51953125, y=15.91796875}}
 {"build", {x=-17, y=14}, "burner-mining-drill", 6}
 {"build", {x=-19, y=14}, "burner-mining-drill", 0}
 {"build", {x=-19, y=12}, "burner-mining-drill", 2}
 {"build", {x=-17, y=12}, "burner-mining-drill", 4}
-{"put", "burner-mining-drill", count, {x=-17, y=14}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-19, y=14}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-19, y=12}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-17, y=12}, defines.inventory.**inventory**}
+{"put", "coal", 1, {x=-17, y=14}, defines.inventory.fuel}
+{"put", "coal", 1, {x=-19, y=14}, defines.inventory.fuel}
+{"put", "coal", 1, {x=-19, y=12}, defines.inventory.fuel}
+{"put", "coal", 1, {x=-17, y=12}, defines.inventory.fuel}
 {"walk", {x=-18.37109375, y=27.56640625}}
 {"walk", {x=-18.37109375, y=47.90234375}}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-24.09375, y=49.29296875}}
 {"walk", {x=-24.10546875, y=43.94921875}}
 {"mine", {x=-23.5, y=43.5}}
@@ -148,103 +197,116 @@
 {"build", {x=-25, y=27}, "stone-furnace", 0}
 {"build", {x=-27, y=29}, "burner-mining-drill", 2}
 {"build", {x=-27, y=27}, "burner-mining-drill", 2}
-{"put", "burner-mining-drill", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=27}, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
 {"walk", {x=-18.09375, y=15.94140625}}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
 {"walk", {x=-18.62109375, y=29.234375}}
 {"walk", {x=-18.62109375, y=47.34375}}
-{"put", "burner-mining-drill", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
-{"walk", {x=1.078125, y=38.92578125}}
-{"mine", {x=1.8125, y=38.625}}
-{"walk", {x=0.53125, y=35.26171875}}
-{"mine", {x=0.1875, y=34.625}}
-{"walk", {x=-3.6328125, y=32.73046875}}
-{"mine", {x=-2.375, y=32}}
-{"walk", {x=-2.62109375, y=30.234375}}
-{"mine", {x=-2.4375, y=29.5625}}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"walk", {x=-40.10546875, y=60.36328125}}
+{"mine", {x=-39.5, y=59.8125}}
+{"mine", {x=-41.5, y=60.5625}}
+{"walk", {x=-42.7421875, y=66.265625}}
+{"mine", {x=-41.6875, y=66.5625}}
+{"mine", {x=-43.5, y=66.4375}}
+{"walk", {x=-58.76171875, y=52.02734375}}
+{"mine", {x=-58.125, y=51.1875}}
+{"mine", {x=-59.6875, y=51.875}}
+{"walk", {x=-64.7734375, y=44.09375}}
+{"mine", {x=-65.4375, y=43.75}}
+{"walk", {x=-66.92578125, y=40.75390625}}
+{"mine", {x=-65.875, y=41.5}}
+{"mine", {x=-68.875, y=40.6875}}
+{"walk", {x=-65.109375, y=38.1953125}}
+{"mine", {x=-66.625, y=38.4375}}
+{"mine", {x=-67.625, y=37.875}}
+{"mine", {x=-64.875, y=37.5}}
+{"walk", {x=-65.953125, y=34.234375}}
+{"mine", {x=-67.3125, y=34.5}}
+{"mine", {x=-64.25, y=35.375}}
+{"mine", {x=-64.25, y=33.875}}
 {"walk", {x=-16.05078125, y=15.1953125}}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
 {"walk", {x=-17.953125, y=30.60546875}}
 {"walk", {x=-17.953125, y=47.08203125}}
-{"put", "burner-mining-drill", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-24.71484375, y=49.078125}}
 {"walk", {x=-23.66015625, y=29.171875}}
-{"put", "burner-mining-drill", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"craft", "burner-mining-drill", 1}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"craft", "burner-mining-drill", 4}
+{"craft", "burner-mining-drill", -1}
 {"walk", {x=-21.359375, y=15.6484375}}
-{"mine", {x=-19, y=14}}
 {"build", {x=-19, y=14}, "burner-mining-drill", 6}
 {"build", {x=-21, y=14}, "burner-mining-drill", 6}
 {"build", {x=-23, y=14}, "burner-mining-drill", 6}
@@ -252,175 +314,172 @@
 {"build", {x=-25, y=12}, "burner-mining-drill", 2}
 {"build", {x=-23, y=12}, "burner-mining-drill", 2}
 {"build", {x=-21, y=12}, "burner-mining-drill", 2}
-{"put", "burner-mining-drill", count, {x=-17, y=12}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-17, y=14}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-19, y=14}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-19, y=12}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-21, y=12}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-21, y=14}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-23, y=14}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-23, y=12}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=12}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=14}, defines.inventory.**inventory**}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
 {"walk", {x=-18.44140625, y=27.98828125}}
 {"walk", {x=-18.44140625, y=48.17578125}}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"craft", "burner-mining-drill", -1}
+{"walk", {x=-18, y=15}}
+{"walk", {x=-27, y=15}}
+{"build", {x=-25, y=14}, "burner-mining-drill", 6}
+{"build", {x=-27, y=14}, "burner-mining-drill", 6}
+{"build", {x=-29, y=14}, "burner-mining-drill", 0}
+{"build", {x=-29, y=12}, "burner-mining-drill", 2}
+{"build", {x=-27, y=12}, "burner-mining-drill", 2}
 {"walk", {x=-24.1796875, y=48.828125}}
-{"walk", {x=-23.546875, y=29.7890625}}
-{"build", {x=-25, y=37}, "stone-furnace", 0}
-{"build", {x=-25, y=35}, "stone-furnace", 0}
-{"build", {x=-25, y=33}, "stone-furnace", 0}
-{"build", {x=-25, y=31}, "stone-furnace", 0}
-{"build", {x=-27, y=37}, "burner-mining-drill", 2}
-{"build", {x=-27, y=35}, "burner-mining-drill", 2}
-{"walk", {x=-13.015625, y=74.015625}}
+{"walk", {x=-13.078125, y=74.125}}
 {"mine", {x=-13.1875, y=75.30078125}}
 {"mine", {x=-11.125, y=74.61328125}}
-{"walk", {x=-10.546875, y=75.7109375}}
+{"walk", {x=-11.4609375, y=75.70703125}}
 {"mine", {x=-10.125, y=76.86328125}}
-{"walk", {x=-6.078125, y=75.7109375}}
-{"mine", {x=-4.875, y=75.36328125}}
-{"walk", {x=-3.01953125, y=76.59375}}
-{"mine", {x=-1.8125, y=75.92578125}}
-{"walk", {x=-5.5234375, y=78.28125}}
+{"walk", {x=-8.26953125, y=77.859375}}
+{"mine", {x=-9.125, y=79.6875}}
 {"mine", {x=-6.75, y=78.11328125}}
-{"craft", "stone-furnace", 1}
-{"craft", "burner-mining-drill", 1}
-{"walk", {x=-24.3203125, y=39.4453125}}
-{"walk", {x=-24.09375, y=29.796875}}
-{"build", {x=-27, y=33}, "burner-mining-drill", 2}
-{"build", {x=-27, y=31}, "burner-mining-drill", 2}
-{"put", "burner-mining-drill", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "burner-mining-drill", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"craft", "automation-science-pack", 1}
+{"walk", {x=-3.56640625, y=76.703125}}
+{"mine", {x=-4.875, y=75.36328125}}
+{"mine", {x=-1.8125, y=75.92578125}}
+{"walk", {x=-13, y=26}}
+{"walk", {x=-24, y=15}}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-27, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-29, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-29, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-27, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"craft", "stone-furnace", -1}
 {"craft", "wooden-chest", 1}
+{"craft", "automation-science-pack", 10}
+{"walk", {x=-24, y=30}}
+{"build", {x=-25, y=31}, "stone-furnace", 0}
+{"build", {x=-27, y=31}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"build", {x=-25, y=33}, "stone-furnace", 0}
+{"build", {x=-27, y=33}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"build", {x=-25, y=35}, "stone-furnace", 0}
+{"build", {x=-27, y=35}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"build", {x=-25, y=37}, "stone-furnace", 0}
+{"build", {x=-27, y=37}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"walk", {x=-68, y=79}}
 {"build", {x=-67, y=80}, "burner-mining-drill", 4}
 {"build", {x=-65, y=81}, "burner-mining-drill", 6}
 {"build", {x=-66, y=83}, "burner-mining-drill", 0}
 {"build", {x=-68, y=82}, "burner-mining-drill", 2}
+{"put", "coal", 5, {x=-67, y=80}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-65, y=81}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-66, y=83}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-68, y=82}, defines.inventory.fuel}
 {"build", {x=-66.5, y=81.5}, "wooden-chest", 0}
-{"put", "wooden-chest", count, {x=-65, y=81}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-66, y=83}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-68, y=82}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-67, y=80}, defines.inventory.**inventory**}
 {"walk", {x=-59.01953125, y=93.75}}
 {"mine", {x=-57.8125, y=93.73828125}}
 {"walk", {x=-48.01171875, y=102.1484375}}
 {"mine", {x=-47.875, y=103.30078125}}
 {"walk", {x=-63.49609375, y=83.1015625}}
-{"take", {x=-66.5, y=81.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-66.5, y=81.5}, "stone", -1, false, defines.inventory.chest}
 {"walk", {x=-63.49609375, y=78.796875}}
 {"mine", {x=-65.5, y=77.48828125}}
 {"walk", {x=-18.515625, y=49.265625}}
 {"walk", {x=-18.4609375, y=28.59765625}}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-23.8046875, y=26.96484375}}
 {"walk", {x=-23.8046875, y=37.94921875}}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"walk", {x=-23.8046875, y=15.83203125}}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
-{"walk", {x=-23.93359375, y=26.51953125}}
-{"walk", {x=-23.93359375, y=47.00390625}}
-{"put", "wooden-chest", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-23.5, y=28.5}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20.5, y=47.5}, defines.inventory.**inventory**}
-{"put", "wooden-chest", count, {x=-20, y=47}, defines.inventory.**inventory**}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=31}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=33}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=35}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=37}, "copper-plate", -1, false, defines.inventory.furnace_result}
 {"craft", "boiler", 1}
 {"craft", "electric-mining-drill", 1}
-{"craft", "pipe", 1}
-{"craft", "steam-engine", 1}
-{"craft", "steam-engine", 1}
-{"walk", {x=-23.93359375, y=24.14453125}}
+{"craft", "steam-engine", 2}
 {"craft", "offshore-pump", 1}
+{"craft", "pipe", 10}
+{"craft", "small-electric-pole", 10}
+{"walk", {x=-24, y=15}}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-27, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-29, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-29, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-27, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"walk", {x=-23.93359375, y=26.51953125}}
+{"walk", {x=-23.93359375, y=47.00390625}}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"walk", {x=-23.93359375, y=24.14453125}}
 {"walk", {x=-54.26953125, y=-19.48046875}}
 {"build", {x=-55.875, y=-21.5}, "offshore-pump", 6}
-{"craft", "pipe", 1}
-{"craft", "pipe", 1}
-{"walk", {x=-45.21484375, y=-19.48046875}}
+{"walk", {x=-47, y=-19.5}}
 {"build", {x=-54.599609375, y=-21.5}, "pipe", 0}
 {"build", {x=-53.599609375, y=-21.5}, "pipe", 0}
 {"build", {x=-52.599609375, y=-21.5}, "pipe", 0}
@@ -434,111 +493,115 @@
 {"build", {x=-44.5, y=-19.5}, "electric-mining-drill", 0}
 {"mine", {x=-45.599609375, y=-21.5}}
 {"build", {x=-44.5, y=-22}, "boiler", 0}
+{"put", "coal", 1, {x=-44.5, y=-22}, defines.inventory.fuel}
 {"build", {x=-44.5, y=-25.5}, "steam-engine", 0}
-{"craft", "small-electric-pole", 1}
-{"craft", "small-electric-pole", 1}
 {"build", {x=-46.5, y=-22.5}, "small-electric-pole", 0}
-{"put", "small-electric-pole", count, {x=-44.5, y=-22}, defines.inventory.**inventory**}
 {"walk", {x=-46.99609375, y=-14.87890625}}
 {"walk", {x=-41.80078125, y=-14.87890625}}
 {"walk", {x=-41.80078125, y=-26.16015625}}
 {"build", {x=-44.5, y=-30.5}, "steam-engine", 0}
 {"build", {x=-46.5, y=-29.5}, "small-electric-pole", 0}
+{"time"}
+{"craft", "lab", 1}
 {"walk", {x=-41.80078125, y=-19.48046875}}
+{"walk", {x=-13.51953125, y=-19.48046875}}
 {"build", {x=-41.5, y=-17.5}, "small-electric-pole", 0}
 {"build", {x=-34.5, y=-17.5}, "small-electric-pole", 0}
 {"build", {x=-27.5, y=-17.5}, "small-electric-pole", 0}
 {"build", {x=-20.5, y=-17.5}, "small-electric-pole", 0}
-{"build", {x=-13.5, y=-17.5}, "small-electric-pole", 0}
-{"walk", {x=-11.51953125, y=-19.48046875}}
-{"build", {x=-13.5, y=-10.5}, "small-electric-pole", 0}
-{"build", {x=-13.5, y=-3.5}, "small-electric-pole", 0}
-{"build", {x=-13.5, y=3.5}, "small-electric-pole", 0}
-{"build", {x=-13.5, y=10.5}, "small-electric-pole", 0}
-{"build", {x=-13.5, y=17.5}, "small-electric-pole", 0}
-{"walk", {x=-11.51953125, y=15.84765625}}
-{"craft", "lab", 1}
-{"build", {x=-13.5, y=24.5}, "small-electric-pole", 0}
+{"build", {x=-15.5, y=-17.5}, "small-electric-pole", 0}
+{"walk", {x=-13.51953125, y=15.84765625}}
+{"build", {x=-15.5, y=-10.5}, "small-electric-pole", 0}
+{"build", {x=-15.5, y=-3.5}, "small-electric-pole", 0}
+{"build", {x=-15.5, y=3.5}, "small-electric-pole", 0}
+{"build", {x=-15.5, y=10.5}, "small-electric-pole", 0}
+{"build", {x=-15.5, y=17.5}, "small-electric-pole", 0}
+{"build", {x=-14.5, y=24.5}, "small-electric-pole", 0}
 {"walk", {x=-11.51953125, y=25.49609375}}
 {"walk", {x=-18.140625, y=28.5546875}}
 {"walk", {x=-18.140625, y=15.7890625}}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
+{"walk", {x=-28.140625, y=15.7890625}}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-27, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-29, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"walk", {x=-18.140625, y=15.7890625}}
+{"take", {x=-29, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-27, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
 {"walk", {x=-23.54296875, y=27.80078125}}
 {"walk", {x=-23.54296875, y=48.13671875}}
-{"put", "small-electric-pole", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"take", {x=-25, y=31}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate",-1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"take", {x=-25, y=33}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"take", {x=-25, y=35}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"take", {x=-25, y=37}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-23.54296875, y=26.76171875}}
-{"build", {x=-10.5, y=26.5}, "lab", 0}
 {"walk", {x=-13.59765625, y=26.76171875}}
-{"take", {x=-10.5, y=26.5}, "item", count, defines.inventory.**inventory**}
-{"put", "lab", count, {x=-10.5, y=26.5}, defines.inventory.**inventory**}
+{"build", {x=-10.5, y=26.5}, "lab", 0}
+{"build", {x=-8.5, y=23.5}, "small-electric-pole", 0}
+{"put", "automation-science-pack", 10, {x=-10.5, y=26.5}, defines.inventory.lab_input}
+{"craft", "electric-mining-drill", 5}
 {"craft", "electric-mining-drill", 1}
 {"craft", "electric-mining-drill", 1}
-{"craft", "electric-mining-drill", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
+{"craft", "transport-belt", 5}
+{"craft", "transport-belt", 5}
+{"craft", "transport-belt", 5}
+{"craft", "transport-belt", 5}
+{"craft", "transport-belt", 5}
 {"walk", {x=23.859375, y=72.6796875}}
 {"mine", {x=25.0625, y=72.86328125}}
-{"craft", "stone-furnace", 1}
+{"craft", "stone-furnace", -1}
 {"walk", {x=14.21875, y=88.19921875}}
 {"mine", {x=14.25, y=89.36328125}}
 {"walk", {x=16.5390625, y=90.2734375}}
@@ -555,13 +618,13 @@
 {"walk", {x=50.5234375, y=56.734375}}
 {"mine", {x=51.4375, y=57.4375}}
 {"mine", {x=51.4375, y=56.1875}}
-{"walk", {x=50.5234375, y=54.8046875}}
+{"walk", {x=50.5234375, y=56.8046875}}
 {"mine", {x=51.6875, y=54.8125}}
-{"walk", {x=51.578125, y=57.640625}}
+{"walk", {x=51.578125, y=60}}
 {"mine", {x=52.75, y=59.1875}}
 {"walk", {x=51.578125, y=60.015625}}
 {"mine", {x=53.125, y=60.5}}
-{"walk", {x=51.578125, y=61.796875}}
+{"walk", {x=51.578125, y=63}}
 {"mine", {x=52.125, y=63.5625}}
 {"walk", {x=52.78125, y=62.8515625}}
 {"mine", {x=53.5625, y=63}}
@@ -570,104 +633,109 @@
 {"mine", {x=51.125, y=66.4375}}
 {"mine", {x=52.3125, y=65.6875}}
 {"walk", {x=-20.8359375, y=15.734375}}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-27, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-29, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-29, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-27, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
 {"walk", {x=-23.578125, y=27.6796875}}
 {"walk", {x=-23.578125, y=47.8671875}}
-{"put", "stone-furnace", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "stone-furnace", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"take", {x=-25, y=31}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate",-1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"take", {x=-25, y=33}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"take", {x=-25, y=35}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"take", {x=-25, y=37}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-16.8984375, y=49.796875}}
 {"walk", {x=-13.58984375, y=21.43359375}}
-{"build", {x=-10.5, y=19.5}, "electric-mining-drill", 6}
+{"build", {x=-11.5, y=19.5}, "electric-mining-drill", 6}
+{"build", {x=-9.5, y=17.5}, "small-electric-pole", 0}
 {"walk", {x=-13.85546875, y=12.08203125}}
-{"build", {x=-10.5, y=16.5}, "electric-mining-drill", 6}
-{"build", {x=-10.5, y=13.5}, "electric-mining-drill", 6}
-{"build", {x=-10.5, y=10.5}, "electric-mining-drill", 6}
-{"build", {x=-10.5, y=7.5}, "electric-mining-drill", 6}
-{"build", {x=-14.5, y=8.5}, "electric-mining-drill", 2}
-{"walk", {x=-12.3359375, y=6.703125}}
-{"build", {x=-14.5, y=5.5}, "electric-mining-drill", 2}
-{"walk", {x=-12.3359375, y=22.734375}}
-{"build", {x=-12.5, y=5.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=6.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=7.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=8.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=9.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=10.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=11.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=12.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=13.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=14.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=15.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=16.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=17.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=18.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=19.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=20.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=21.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=22.5}, "transport-belt", 4}
-{"build", {x=-12.5, y=23.5}, "transport-belt", 4}
+{"build", {x=-11.5, y=16.5}, "electric-mining-drill", 6}
+{"build", {x=-11.5, y=13.5}, "electric-mining-drill", 6}
+{"build", {x=-11.5, y=10.5}, "electric-mining-drill", 6}
+{"build", {x=-9.5, y=10.5}, "small-electric-pole", 0}
+{"build", {x=-16.5, y=8.5}, "electric-mining-drill", 2}
+{"walk", {x=-13.5, y=6.703125}}
+{"build", {x=-16.5, y=5.5}, "electric-mining-drill", 2}
+{"walk", {x=-13.5, y=22.734375}}
+{"build", {x=-14.5, y=5.5}, "transport-belt", 4}
+{"build", {x=-14.5, y=6.5}, "transport-belt", 4}
+{"build", {x=-14.5, y=7.5}, "transport-belt", 4}
+{"build", {x=-14.5, y=8.5}, "transport-belt", 2}
+{"build", {x=-13.5, y=8.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=9.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=10.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=11.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=12.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=13.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=14.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=15.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=16.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=17.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=18.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=19.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=20.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=21.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=22.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=23.5}, "transport-belt", 4}
+{"build", {x=-13.5, y=24.5}, "transport-belt", 2}
 {"build", {x=-12.5, y=24.5}, "transport-belt", 2}
 {"build", {x=-11.5, y=24.5}, "transport-belt", 2}
 {"build", {x=-10.5, y=24.5}, "transport-belt", 2}
 {"build", {x=-9.5, y=24.5}, "transport-belt", 2}
 {"build", {x=-8.5, y=24.5}, "transport-belt", 4}
-{"build", {x=-7.5, y=23.5}, "transport-belt", 2}
 {"mine", {x=-7.5, y=23.5}}
 {"walk", {x=-5.671875, y=25.2578125}}
 {"build", {x=-8.5, y=25.5}, "transport-belt", 2}
@@ -695,7 +763,6 @@
 {"build", {x=-5.5, y=6.5}, "transport-belt", 0}
 {"build", {x=-5.5, y=5.5}, "transport-belt", 0}
 {"walk", {x=-5.58984375, y=5.52734375}}
-{"craft", "automation-science-pack", 1}
 {"walk", {x=-6.62109375, y=24.16015625}}
 {"build", {x=-3, y=26}, "stone-furnace", 0}
 {"build", {x=-3, y=24}, "stone-furnace", 0}
@@ -709,14 +776,9 @@
 {"craft", "inserter", 1}
 {"craft", "inserter", 1}
 {"craft", "inserter", 1}
-{"craft", "assembling-machine-1", 1}
-{"craft", "assembling-machine-1", 1}
-{"craft", "assembling-machine-1", 1}
-{"craft", "assembling-machine-1", 1}
 {"build", {x=-4.5, y=25.5}, "inserter", 6}
 {"build", {x=-4.5, y=24.5}, "inserter", 6}
 {"build", {x=-4.5, y=23.5}, "small-electric-pole", 0}
-{"build", {x=-8.5, y=23.5}, "small-electric-pole", 0}
 {"build", {x=-3, y=22}, "stone-furnace", 0}
 {"build", {x=-3, y=20}, "stone-furnace", 0}
 {"build", {x=-4.5, y=21.5}, "inserter", 6}
@@ -739,104 +801,170 @@
 {"build", {x=-4.5, y=6.5}, "small-electric-pole", 0}
 {"walk", {x=-7.50390625, y=21.92578125}}
 {"walk", {x=-18.63671875, y=22.14453125}}
-{"build", {x=-14.5, y=22.5}, "assembling-machine-1", 0}
-{"put", "assembling-machine-1", count, {x=-14.5, y=22.5}, defines.inventory.**inventory**}
+{"craft", "assembling-machine-1", 1}
+{"craft", "assembling-machine-1", 1}
+{"craft", "assembling-machine-1", 1}
+{"craft", "assembling-machine-1", 1}
+{"build", {x=-15.5, y=22.5}, "assembling-machine-1", 0}
+{"recipe", {x=-15.5, y=22.5}, "copper-cable"}
+{"put", "copper-plate", 50, {x=-15.5, y=22.5}, defines.inventory.assembling_machine_input}
 {"walk", {x=-19.796875, y=16.0859375}}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
 {"walk", {x=-23.69921875, y=28.15234375}}
 {"walk", {x=-23.69921875, y=47.74609375}}
-{"put", "assembling-machine-1", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "assembling-machine-1", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"craft", "small-electric-pole", 30}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"take", {x=-25, y=31}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate",-1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"take", {x=-25, y=33}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"take", {x=-25, y=35}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"take", {x=-25, y=37}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-15.82421875, y=48.19921875}}
+{"walk", {x=-14.26953125, y=29.21484375}}
 {"walk", {x=-8.26953125, y=29.21484375}}
 {"build", {x=-3.5, y=29.5}, "assembling-machine-1", 0}
-{"put", "assembling-machine-1", count, {x=-3.5, y=29.5}, defines.inventory.**inventory**}
+{"recipe", {x=-3.5, y=29.5}, "iron-gear-wheel"}
+{"put", "iron-plate", 50, {x=-3.5, y=29.5}, defines.inventory.assembling_machine_input}
 {"build", {x=-4.5, y=27.5}, "small-electric-pole", 0}
 {"build", {x=-3.5, y=32.5}, "assembling-machine-1", 0}
-{"put", "assembling-machine-1", count, {x=-3.5, y=32.5}, defines.inventory.**inventory**}
+{"recipe", {x=-3.5, y=32.5}, "iron-gear-wheel"}
+{"put", "iron-plate", 50, {x=-3.5, y=32.5}, defines.inventory.assembling_machine_input}
 {"build", {x=-1.5, y=31.5}, "small-electric-pole", 0}
-{"build", {x=-6.5, y=28.5}, "entity-ghost", 0}
 {"mine", {x=-6.5, y=28.5}}
 {"craft", "stone-furnace", 1}
-{"walk", {x=-11.203125, y=21.50390625}}
-{"build", {x=-14.5, y=19.5}, "assembling-machine-1", 0}
-{"put", "assembling-machine-1", count, {x=-14.5, y=19.5}, defines.inventory.**inventory**}
-{"take", {x=-14.5, y=22.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-14.5, y=19.5}, "item", count, defines.inventory.**inventory**}
-{"walk", {x=-5.51171875, y=31.39453125}}
-{"take", {x=-3.5, y=32.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3.5, y=29.5}, "item", count, defines.inventory.**inventory**}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "transport-belt", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
+{"walk", {x=-14, y=31.50390625}}
+{"walk", {x=-13, y=21.50390625}}
+{"build", {x=-15.5, y=19.5}, "assembling-machine-1", 0}
+{"recipe", {x=-15.5, y=19.5}, "copper-cable"}
+{"put", "copper-plate", 50, {x=-15.5, y=19.5}, defines.inventory.assembling_machine_input}
+{"take", {x=-15.5, y=22.5}, "copper-cable", -1, false, defines.inventory.assembling_machine_output}
+{"take", {x=-15.5, y=19.5}, "copper-cable", -1, true, defines.inventory.assembling_machine_output}
+{"walk", {x=-6, y=31.39453125}}
+{"take", {x=-3.5, y=32.5}, "iron-gear-wheel", -1, false, defines.inventory.assembling_machine_output}
+{"take", {x=-3.5, y=29.5}, "iron-gear-wheel", -1, false, defines.inventory.assembling_machine_output}
+{"walk", {x=-19.796875, y=16.0859375}}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"walk", {x=-23.69921875, y=28.15234375}}
+{"walk", {x=-23.69921875, y=47.74609375}}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"take", {x=-25, y=31}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate",-1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"take", {x=-25, y=33}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"take", {x=-25, y=35}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"take", {x=-25, y=37}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "transport-belt", 5}
+{"craft", "transport-belt", 5}
+{"craft", "transport-belt", 5}
+{"craft", "transport-belt", 5}
+{"craft", "transport-belt", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
 {"walk", {x=-5.33203125, y=-2.4453125}}
 {"build", {x=-3, y=6}, "stone-furnace", 0}
 {"build", {x=-3, y=4}, "stone-furnace", 0}
@@ -853,11 +981,8 @@
 {"build", {x=-3, y=0}, "stone-furnace", 0}
 {"build", {x=-4.5, y=1.5}, "inserter", 6}
 {"build", {x=-4.5, y=0.5}, "inserter", 6}
-{"craft", "small-electric-pole", 1}
-{"craft", "small-electric-pole", 1}
-{"craft", "small-electric-pole", 1}
-{"craft", "small-electric-pole", 1}
-{"craft", "small-electric-pole", 1}
+{"craft", "small-electric-pole", 5}
+{"craft", "small-electric-pole", 5}
 {"build", {x=-4.5, y=-0.5}, "small-electric-pole", 0}
 {"build", {x=-5.5, y=-2.5}, "transport-belt", 0}
 {"build", {x=-5.5, y=-3.5}, "transport-belt", 0}
@@ -896,160 +1021,160 @@
 {"walk", {x=-5.59375, y=-19.66015625}}
 {"walk", {x=-1.5703125, y=-16.82421875}}
 {"walk", {x=-1.5703125, y=27.85546875}}
-{"take", {x=-3, y=-16}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-10}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-8}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-6}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-4}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-2}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=0}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=2}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=4}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=6}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=8}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=10}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=16}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=18}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=20}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=22}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=24}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=26}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-3, y=-16}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-14}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-12}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-10}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-8}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-6}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-4}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-2}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=0}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=2}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=4}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=6}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=8}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=10}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=12}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=14}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=16}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=18}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=20}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=22}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=24}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=26}, "iron-plate", -1, true, defines.inventory.furnace_result}
 {"walk", {x=-6.46875, y=28.03515625}}
-{"take", {x=-3.5, y=29.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3.5, y=32.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-3.5, y=29.5}, "iron-gear-wheel", -1, false, defines.inventory.assembling_machine_output}
+{"take", {x=-3.5, y=32.5}, "iron-gear-wheel", -1, false, defines.inventory.assembling_machine_output}
 {"walk", {x=-14.85546875, y=20.94921875}}
-{"take", {x=-14.5, y=22.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-14.5, y=19.5}, "item", count, defines.inventory.**inventory**}
-{"craft", "electric-mining-drill", 1}
-{"craft", "electric-mining-drill", 1}
-{"walk", {x=-7.58203125, y=22.05859375}}
-{"walk", {x=-7.58203125, y=9.73828125}}
+{"take", {x=-14.5, y=22.5}, "copper-cable", -1, false, defines.inventory.assembling_machine_output}
+{"take", {x=-14.5, y=19.5}, "copper-cable", -1, false, defines.inventory.assembling_machine_output}
+{"put", "copper-plate", 100, {x=-14.5, y=22.5}, defines.inventory.assembling_machine_input}
+{"put", "copper-plate", 100, {x=-14.5, y=19.5}, defines.inventory.assembling_machine_input}
+{"craft", "electric-mining-drill", 4}
+{"craft", "assembling-machine-1", 6}
+{"craft", "electric-mining-drill", 4}
+{"walk", {x=-4, y=22.05859375}}
+{"walk", {x=-4, y=9.73828125}}
 {"build", {x=-7.5, y=19.5}, "electric-mining-drill", 2}
 {"build", {x=-7.5, y=16.5}, "electric-mining-drill", 2}
 {"build", {x=-7.5, y=13.5}, "electric-mining-drill", 2}
 {"build", {x=-7.5, y=10.5}, "electric-mining-drill", 2}
-{"walk", {x=-7.58203125, y=3.20703125}}
+{"walk", {x=-4, y=3.20703125}}
 {"build", {x=-7.5, y=7.5}, "electric-mining-drill", 2}
 {"walk", {x=-19.21484375, y=1.51953125}}
 {"walk", {x=-20.09375, y=12.96484375}}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-24.5, y=27.5}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
-{"walk", {x=-23.93359375, y=49.7578125}}
-{"walk", {x=-17.2265625, y=49.23046875}}
-{"walk", {x=-16.27734375, y=21.6640625}}
-{"put", "electric-mining-drill", count, {x=-14.5, y=22.5}, defines.inventory.**inventory**}
-{"take", {x=-14.5, y=22.5}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-14.5, y=19.5}, defines.inventory.**inventory**}
-{"take", {x=-14.5, y=19.5}, "item", count, defines.inventory.**inventory**}
-{"walk", {x=-16.27734375, y=29.0859375}}
-{"walk", {x=-5.91796875, y=30.984375}}
-{"put", "electric-mining-drill", count, {x=-3.5, y=29.5}, defines.inventory.**inventory**}
-{"take", {x=-3.5, y=29.5}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-3.5, y=32.5}, defines.inventory.**inventory**}
-{"take", {x=-3.5, y=32.5}, "item", count, defines.inventory.**inventory**}
-{"craft", "iron-chest", 1}
-{"craft", "iron-chest", 1}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"walk", {x=-23.69921875, y=28.15234375}}
+{"walk", {x=-23.69921875, y=47.74609375}}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"take", {x=-25, y=31}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate",-1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"take", {x=-25, y=33}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"take", {x=-25, y=35}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"take", {x=-25, y=37}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"craft", "iron-chest", 5}
+{"craft", "iron-chest", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
 {"walk", {x=-6.23828125, y=29.2265625}}
 {"build", {x=-5.5, y=30.5}, "inserter", 2}
 {"build", {x=-5.5, y=31.5}, "inserter", 2}
 {"build", {x=-7.5, y=31.5}, "inserter", 2}
 {"build", {x=-7.5, y=30.5}, "inserter", 2}
 {"walk", {x=-5.49609375, y=29.2265625}}
+{"craft", "lab", 3}
 {"build", {x=-6.5, y=29.5}, "inserter", 4}
 {"build", {x=-6.5, y=32.5}, "inserter", 0}
+{"put", "iron-plate", 50, {x=-3.5, y=29}, defines.inventory.assembling_machine_input}
+{"put", "iron-plate", 50, {x=-3.5, y=32}, defines.inventory.assembling_machine_input}
 {"build", {x=-6.5, y=34.5}, "assembling-machine-1", 0}
+{"recipe", {x=-6.5, y=34.5}, "automation-science-pack"}
+{"put", "copper-plate", 50, {x=-6.5, y=34.5}, defines.inventory.assembling_machine_input}
 {"build", {x=-9.5, y=32.5}, "assembling-machine-1", 0}
+{"recipe", {x=-9.5, y=32.5}, "automation-science-pack"}
+{"put", "copper-plate", 50, {x=-9.5, y=32.5}, defines.inventory.assembling_machine_input}
 {"build", {x=-9.5, y=29.5}, "assembling-machine-1", 0}
+{"recipe", {x=-9.5, y=29.5}, "automation-science-pack"}
+{"put", "copper-plate", 50, {x=-9.5, y=29.5}, defines.inventory.assembling_machine_input}
 {"build", {x=-6.5, y=27.5}, "assembling-machine-1", 0}
+{"recipe", {x=-6.5, y=27.5}, "automation-science-pack"}
+{"put", "copper-plate", 50, {x=-6.5, y=27.5}, defines.inventory.assembling_machine_input}
 {"build", {x=-6.5, y=30.5}, "iron-chest", 0}
 {"build", {x=-6.5, y=31.5}, "iron-chest", 0}
 {"build", {x=-7.5, y=29.5}, "small-electric-pole", 0}
-{"build", {x=-5.5, y=32.5}, "small-electric-pole", 0}
-{"put", "small-electric-pole", count, {x=-6.5, y=27.5}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-9.5, y=29.5}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-9.5, y=32.5}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-6.5, y=34.5}, defines.inventory.**inventory**}
 {"build", {x=-8.5, y=27.5}, "inserter", 2}
 {"walk", {x=-8.09765625, y=31.40625}}
 {"build", {x=-11.5, y=30.5}, "inserter", 2}
 {"build", {x=-11.5, y=31.5}, "inserter", 2}
 {"build", {x=-8.5, y=34.5}, "inserter", 2}
-{"craft", "lab", 1}
-{"craft", "lab", 1}
-{"craft", "lab", 1}
-{"mine", {x=-5.5, y=32.5}}
 {"build", {x=-7.5, y=32.5}, "small-electric-pole", 0}
 {"build", {x=-11.5, y=32.5}, "small-electric-pole", 0}
 {"build", {x=-13.5, y=29.5}, "lab", 0}
 {"build", {x=-13.5, y=32.5}, "lab", 0}
-{"walk", {x=-11.46484375, y=33.08203125}}
+{"walk", {x=-8, y=34}}
+{"walk", {x=-11.5, y=34}}
 {"build", {x=-10.5, y=35.5}, "lab", 0}
-{"walk", {x=-10.4375, y=34.03125}}
+{"time"}
+{"walk", {x=-10.4375, y=34}}
 {"walk", {x=-7.7734375, y=36.359375}}
 {"walk", {x=-6.359375, y=37.625}}
 {"build", {x=-3.5, y=35.5}, "assembling-machine-1", 0}
+{"recipe", {x=-3.5, y=35.5}, "iron-gear-wheel"}
 {"build", {x=-3.5, y=39.5}, "assembling-machine-1", 0}
+{"recipe", {x=-3.5, y=39.5}, "transport-belt"}
 {"build", {x=-2.5, y=37.5}, "inserter", 0}
 {"build", {x=-5.5, y=38.5}, "inserter", 2}
 {"build", {x=-6.5, y=39.5}, "inserter", 0}
@@ -1057,36 +1182,34 @@
 {"craft", "iron-chest", 1}
 {"build", {x=-5.5, y=39.5}, "small-electric-pole", 0}
 {"build", {x=-1.5, y=37.5}, "small-electric-pole", 0}
-{"put", "small-electric-pole", count, {x=-3.5, y=35.5}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-3.5, y=39.5}, defines.inventory.**inventory**}
 {"build", {x=-6.5, y=40.5}, "iron-chest", 0}
 {"walk", {x=-1.01953125, y=36.60546875}}
 {"walk", {x=-1.01953125, y=28.58984375}}
-{"take", {x=-3.5, y=29.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3.5, y=32.5}, "item", count, defines.inventory.**inventory**}
+{"put", "iron-plate", 50, {x=-3.5, y=29.5}, defines.inventory.assembling_machine_input}
+{"put", "iron-plate", 50, {x=-3.5, y=32.5}, defines.inventory.assembling_machine_input}
 {"walk", {x=-1.01953125, y=-17.27734375}}
-{"take", {x=-3, y=26}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=24}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=22}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=20}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=18}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=16}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=10}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=8}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=6}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=4}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=2}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=0}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-2}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-4}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-6}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-8}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-10}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-3, y=-16}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-3, y=26}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=24}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=22}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=20}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=18}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=16}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=14}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=12}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=10}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=8}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=6}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=4}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=2}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=0}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-2}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-4}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-6}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-8}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-10}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-12}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-14}, "iron-plate", -1, true, defines.inventory.furnace_result}
+{"take", {x=-3, y=-16}, "iron-plate", -1, true, defines.inventory.furnace_result}
 {"craft", "boiler", 1}
 {"craft", "steam-engine", 1}
 {"craft", "steam-engine", 1}
@@ -1099,6 +1222,13 @@
 {"craft", "boiler", 1}
 {"craft", "steam-engine", 1}
 {"craft", "steam-engine", 1}
+{"craft", "pipe", 10}
+{"craft", "transport-belt", 10}
+{"craft", "transport-belt", 10}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
 {"walk", {x=-37.08984375, y=-19.35546875}}
 {"build", {x=-41.5, y=-19.5}, "electric-mining-drill", 0}
 {"build", {x=-41.5, y=-22}, "boiler", 0}
@@ -1127,94 +1257,92 @@
 {"walk", {x=-27.44140625, y=-24.84765625}}
 {"build", {x=-30.5, y=-25.5}, "steam-engine", 0}
 {"build", {x=-30.5, y=-30.5}, "steam-engine", 0}
-{"walk", {x=-26.38671875, y=-14.73828125}}
-{"walk", {x=-26.38671875, y=13.31640625}}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
+{"walk", {x=-26, y=-14.73828125}}
+{"walk", {x=-26, y=13.31640625}}
+{"take", {x=-17, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=12}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-25, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-23, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-21, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-19, y=14}, "coal", -1, false, defines.inventory.fuel}
+{"take", {x=-17, y=14}, "coal", -1, false, defines.inventory.fuel}
 {"walk", {x=-18.546875, y=27.7265625}}
 {"walk", {x=-18.546875, y=48.953125}}
-{"put", "steam-engine", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "iron-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=47}, "iron-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-1.26953125, y=41.32421875}}
+{"craft", "transport-belt", 10}
+{"craft", "transport-belt", 10}
 {"walk", {x=-1.14453125, y=29.00390625}}
-{"put", "steam-engine", count, {x=-3.5, y=39.5}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-3.5, y=35.5}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-3.5, y=32.5}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-3.5, y=29.5}, defines.inventory.**inventory**}
-{"walk", {x=-6.859375, y=37.6484375}}
-{"take", {x=-6.5, y=40.5}, "item", count, defines.inventory.**inventory**}
+{"walk", {x=-5, y=37.6484375}}
+{"take", {x=-6.5, y=40.5}, "transport-belt", -1, true, defines.inventory.chest}
 {"walk", {x=-23.6328125, y=37.90625}}
 {"walk", {x=-23.6328125, y=27.9609375}}
-{"put", "steam-engine", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"walk", {x=-16.69921875, y=22.06640625}}
-{"put", "steam-engine", count, {x=-14.5, y=22.5}, defines.inventory.**inventory**}
-{"put", "steam-engine", count, {x=-14.5, y=19.5}, defines.inventory.**inventory**}
-{"take", {x=-14.5, y=19.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-14.5, y=22.5}, "item", count, defines.inventory.**inventory**}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"take", {x=-25, y=37}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"take", {x=-25, y=35}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"take", {x=-25, y=33}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"take", {x=-25, y=31}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"walk", {x=-17, y=21}}
+{"take", {x=-14.5, y=19.5}, "copper-cable", -1, true, defines.inventory.assembling_machine_output}
+{"take", {x=-14.5, y=22.5}, "copper-cable", -1, true, defines.inventory.assembling_machine_output}
+{"put", "copper-plate", 100, {x=-14.5, y=19.5}, defines.inventory.assembling_machine_input}
+{"put", "copper-plate", 100, {x=-14.5, y=22.5}, defines.inventory.assembling_machine_input}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
 {"walk", {x=-15.0546875, y=21.01171875}}
 {"walk", {x=1.421875, y=21.01171875}}
-{"craft", "transport-belt", 1}
+{"craft", "transport-belt", 10}
+{"craft", "inserter", 10}
+{"craft", "assembling-machine-1", 4}
 {"walk", {x=-13.97265625, y=37.43359375}}
-{"walk", {x=-5.60546875, y=37.85546875}}
-{"take", {x=-6.5, y=40.5}, "item", count, defines.inventory.**inventory**}
 {"walk", {x=0.23828125, y=36.6953125}}
 {"walk", {x=0.66015625, y=27.0703125}}
 {"build", {x=-0.5, y=26.5}, "transport-belt", 4}
@@ -1223,7 +1351,7 @@
 {"build", {x=-0.5, y=23.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=22.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=21.5}, "transport-belt", 4}
-{"walk", {x=0.66015625, y=-17.015625}}
+{"walk", {x=0.66015625, y=12}}
 {"build", {x=-1.5, y=25.5}, "inserter", 6}
 {"build", {x=-1.5, y=24.5}, "inserter", 6}
 {"build", {x=-1.5, y=23.5}, "small-electric-pole", 0}
@@ -1242,6 +1370,7 @@
 {"build", {x=-1.5, y=16.5}, "inserter", 6}
 {"build", {x=-1.5, y=13.5}, "inserter", 6}
 {"build", {x=-1.5, y=12.5}, "inserter", 6}
+{"walk", {x=0.66015625, y=6}}
 {"build", {x=-0.5, y=12.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=11.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=10.5}, "transport-belt", 4}
@@ -1254,6 +1383,7 @@
 {"build", {x=-1.5, y=8.5}, "inserter", 6}
 {"build", {x=-1.5, y=5.5}, "inserter", 6}
 {"build", {x=-1.5, y=4.5}, "inserter", 6}
+{"walk", {x=0.66015625, y=-6}}
 {"build", {x=-1.5, y=6.5}, "small-electric-pole", 0}
 {"build", {x=-0.5, y=5.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=4.5}, "transport-belt", 4}
@@ -1278,6 +1408,7 @@
 {"build", {x=-0.5, y=-9.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=-10.5}, "transport-belt", 4}
 {"build", {x=-1.5, y=-5.5}, "small-electric-pole", 0}
+{"walk", {x=0.66015625, y=-16}}
 {"build", {x=-1.5, y=-6.5}, "inserter", 6}
 {"build", {x=-1.5, y=-7.5}, "inserter", 6}
 {"build", {x=-1.5, y=-10.5}, "inserter", 6}
@@ -1298,12 +1429,9 @@
 {"build", {x=-0.5, y=27.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=28.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=29.5}, "transport-belt", 4}
+{"build", {x=-1.5, y=29.5}, "inserter", 2}
 {"build", {x=-0.5, y=30.5}, "transport-belt", 4}
 {"build", {x=-0.5, y=31.5}, "transport-belt", 4}
-{"build", {x=0.5, y=31.5}, "transport-belt", 4}
-{"build", {x=0.5, y=32.5}, "transport-belt", 4}
-{"mine", {x=0.5, y=31.5}}
-{"mine", {x=0.5, y=32.5}}
 {"build", {x=-1.5, y=30.5}, "inserter", 2}
 {"build", {x=-1.5, y=32.5}, "inserter", 2}
 {"build", {x=-0.5, y=32.5}, "transport-belt", 4}
@@ -1318,7 +1446,6 @@
 {"build", {x=-1.5, y=38.5}, "inserter", 2}
 {"build", {x=-1.5, y=36.5}, "inserter", 2}
 {"build", {x=-1.5, y=33.5}, "inserter", 2}
-{"build", {x=-1.5, y=29.5}, "inserter", 2}
 {"walk", {x=-1.07421875, y=33.578125}}
 {"walk", {x=-1.91796875, y=40.01953125}}
 {"build", {x=-0.5, y=40.5}, "transport-belt", 4}
@@ -1333,7 +1460,9 @@
 {"build", {x=-0.5, y=49.5}, "transport-belt", 4}
 {"walk", {x=-1.91796875, y=50.11328125}}
 {"build", {x=-3.5, y=42.5}, "assembling-machine-1", 0}
+{"recipe", {x=-3.5, y=42.5}, "iron-gear-wheel"}
 {"build", {x=-3.5, y=45.5}, "assembling-machine-1", 0}
+{"recipe", {x=-3.5, y=45.5}, "iron-gear-wheel"}
 {"build", {x=-1.5, y=43.5}, "small-electric-pole", 0}
 {"build", {x=-1.5, y=41.5}, "inserter", 2}
 {"build", {x=-1.5, y=42.5}, "inserter", 2}
@@ -1351,30 +1480,28 @@
 {"walk", {x=-18.1875, y=27.09765625}}
 {"walk", {x=-23.6796875, y=27.09765625}}
 {"walk", {x=-23.6796875, y=37.33984375}}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-25, y=27}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=29}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=31}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=33}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=35}, "copper-plate", -1, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=37}, "copper-plate", -1, false, defines.inventory.furnace_result}
 {"walk", {x=-22.640625, y=38.09375}}
 {"walk", {x=-8.2421875, y=38.09375}}
 {"walk", {x=-8.09375, y=29.1875}}
-{"put", "iron-chest", count, {x=-6.5, y=34.5}, defines.inventory.**inventory**}
-{"put", "iron-chest", count, {x=-9.5, y=32.5}, defines.inventory.**inventory**}
-{"put", "iron-chest", count, {x=-9.5, y=29.5}, defines.inventory.**inventory**}
-{"put", "iron-chest", count, {x=-6.5, y=27.5}, defines.inventory.**inventory**}
 {"walk", {x=-11.3125, y=21.546875}}
-{"take", {x=-14.5, y=19.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-14.5, y=22.5}, "item", count, defines.inventory.**inventory**}
-{"craft", "electric-mining-drill", 1}
-{"craft", "electric-mining-drill", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
-{"craft", "inserter", 1}
+{"take", {x=-14.5, y=19.5}, "copper-cable", -1, false, defines.inventory.assembling_machine_output}
+{"take", {x=-14.5, y=22.5}, "copper-cable", -1, false, defines.inventory.assembling_machine_output}
+{"put", "copper-plate", 100, {x=-14.5, y=19.5}, defines.inventory.assembling_machine_input}
+{"put", "copper-plate", 100, {x=-14.5, y=22.5}, defines.inventory.assembling_machine_input}
+{"craft", "electric-mining-drill", 5}
+{"craft", "electric-mining-drill", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
+{"craft", "inserter", 5}
 {"walk", {x=-22.59375, y=21.09375}}
 {"build", {x=-23.5, y=16.5}, "electric-mining-drill", 4}
 {"build", {x=-26.5, y=16.5}, "electric-mining-drill", 4}
@@ -1385,14 +1512,17 @@
 {"build", {x=-26.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-27.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-28.5, y=18.5}, "transport-belt", 2}
-{"walk", {x=-41.84375, y=20.51953125}}
+{"walk", {x=-30, y=20.51953125}}
 {"build", {x=-29.5, y=18.5}, "transport-belt", 2}
+{"build", {x=-28.5, y=17.5}, "small-electric-pole", 0}
 {"build", {x=-30.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-31.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-32.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-33.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-34.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-35.5, y=18.5}, "transport-belt", 2}
+{"build", {x=-35.5, y=17.5}, "small-electric-pole", 0}
+{"walk", {x=-40, y=20.51953125}}
 {"build", {x=-36.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-37.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-38.5, y=18.5}, "transport-belt", 2}
@@ -1404,17 +1534,16 @@
 {"build", {x=-44.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-45.5, y=18.5}, "transport-belt", 2}
 {"build", {x=-46.5, y=18.5}, "transport-belt", 2}
-{"build", {x=-28.5, y=17.5}, "small-electric-pole", 0}
-{"build", {x=-35.5, y=17.5}, "small-electric-pole", 0}
 {"build", {x=-42.5, y=17.5}, "small-electric-pole", 0}
 {"build", {x=-49.5, y=17.5}, "small-electric-pole", 0}
+{"walk", {x=-25, y=20.5}}
 {"build", {x=-44.5, y=20.5}, "electric-mining-drill", 0}
 {"build", {x=-41.5, y=20.5}, "electric-mining-drill", 0}
 {"build", {x=-38.5, y=20.5}, "electric-mining-drill", 0}
 {"build", {x=-35.5, y=20.5}, "electric-mining-drill", 0}
 {"build", {x=-32.5, y=20.5}, "electric-mining-drill", 0}
 {"build", {x=-29.5, y=20.5}, "electric-mining-drill", 0}
-{"walk", {x=-25.9609375, y=20.51953125}}
+{"walk", {x=-15, y=20.5}}
 {"build", {x=-21.5, y=17.5}, "small-electric-pole", 0}
 {"build", {x=-20.5, y=17.5}, "small-electric-pole", 0}
 {"build", {x=-21.5, y=18.5}, "transport-belt", 2}
@@ -1574,55 +1703,51 @@
 {"build", {x=-1.5, y=52.5}, "iron-chest", 0}
 {"build", {x=-1.5, y=57.5}, "iron-chest", 0}
 {"walk", {x=-7.62109375, y=44.140625}}
-{"take", {x=-6.5, y=43.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-6.5, y=43.5}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-15.3203125, y=33.4609375}}
 {"walk", {x=-14.4765625, y=24.15625}}
 {"mine", {x=-14.5, y=22.5}}
 {"walk", {x=-14.4765625, y=21.1875}}
 {"mine", {x=-14.5, y=19.5}}
 {"walk", {x=-19.30859375, y=15.91796875}}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-17, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-19, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-21, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-23, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-23, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-21, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-19, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-17, y=14}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-23.984375, y=27.7890625}}
 {"walk", {x=-23.984375, y=47.3828125}}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-25, y=27}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=29}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=31}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=33}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=35}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=37}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=47}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-42.62109375, y=56.08984375}}
 {"walk", {x=-64.55859375, y=79.3046875}}
-{"put", "iron-chest", count, {x=-65, y=81}, defines.inventory.**inventory**}
-{"put", "iron-chest", count, {x=-66, y=83}, defines.inventory.**inventory**}
-{"put", "iron-chest", count, {x=-68, y=82}, defines.inventory.**inventory**}
-{"put", "iron-chest", count, {x=-67, y=80}, defines.inventory.**inventory**}
-{"take", {x=-66.5, y=81.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-66.5, y=81.5}, "item", count, false, defines.inventory.furnace_result}
 {"craft", "stone-furnace", 1}
 {"build", {x=-11.5, y=57.5}, "transport-belt", 4}
 {"walk", {x=1.1328125, y=58.171875}}
 {"walk", {x=1.1328125, y=51.1953125}}
-{"take", {x=-1.5, y=57.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-1.5, y=52.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-1.5, y=51.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-1.5, y=57.5}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-1.5, y=52.5}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-1.5, y=51.5}, "item", count, false, defines.inventory.furnace_result}
 {"craft", "electric-mining-drill", 1}
 {"craft", "electric-mining-drill", 1}
 {"craft", "electric-mining-drill", 1}
@@ -1845,66 +1970,66 @@
 {"walk", {x=-7.875, y=21.84375}}
 {"walk", {x=-14.29296875, y=21.16015625}}
 {"walk", {x=-19.1875, y=14.90234375}}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-17, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-19, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-21, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-23, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-23, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-21, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-19, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-17, y=14}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-20.97265625, y=24.328125}}
 {"walk", {x=-23.71484375, y=27.21875}}
-{"put", "electric-mining-drill", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-22, y=47}, defines.inventory.**inventory**}
-{"put", "electric-mining-drill", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"take", {x=-25, y=27}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"take", {x=-25, y=29}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"take", {x=-20, y=29}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"take", {x=-25, y=31}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"take", {x=-20, y=31}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"take", {x=-25, y=33}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"take", {x=-20, y=33}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"take", {x=-25, y=35}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"take", {x=-20, y=35}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"take", {x=-25, y=37}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"take", {x=-20, y=37}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"take", {x=-20, y=39}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"take", {x=-20, y=41}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"take", {x=-20, y=43}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"take", {x=-20, y=45}, "item", count, false, defines.inventory.furnace_result}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"take", {x=-20, y=47}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-23.71484375, y=49.484375}}
 {"walk", {x=-46.81640625, y=23.265625}}
 {"build", {x=-47.5, y=21.5}, "electric-mining-drill", 0}
@@ -1971,14 +2096,14 @@
 {"walk", {x=-15.0703125, y=25.69921875}}
 {"walk", {x=-15.640625, y=33.046875}}
 {"walk", {x=-8.2109375, y=40.57421875}}
-{"take", {x=-6.5, y=40.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-6.5, y=43.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-6.5, y=40.5}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-6.5, y=43.5}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-8.2109375, y=46.36328125}}
 {"walk", {x=1.44921875, y=49.4296875}}
 {"walk", {x=1.44921875, y=58.3359375}}
-{"take", {x=-1.5, y=51.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-1.5, y=52.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-1.5, y=57.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-1.5, y=51.5}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-1.5, y=52.5}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-1.5, y=57.5}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=0.91796875, y=60.5}}
 {"walk", {x=-10.36328125, y=60.5}}
 {"build", {x=-14, y=59}, "stone-furnace", 0}
@@ -2225,24 +2350,24 @@
 {"build", {x=-4.5, y=77.5}, "iron-chest", 0}
 {"build", {x=-5.5, y=76.5}, "small-electric-pole", 0}
 {"walk", {x=0.61328125, y=52.109375}}
-{"take", {x=-1.5, y=57.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-1.5, y=52.5}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-1.5, y=51.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-1.5, y=57.5}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-1.5, y=52.5}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-1.5, y=51.5}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-8.546875, y=42.87890625}}
-{"take", {x=-6.5, y=43.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-6.5, y=43.5}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-13.796875, y=42.04296875}}
 {"walk", {x=-18.05859375, y=46.4296875}}
 {"walk", {x=-18.05859375, y=29.359375}}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-20, y=47}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "item", count, false, defines.inventory.furnace_result}
 {"craft", "electric-mining-drill", 1}
 {"craft", "inserter", 1}
 {"craft", "inserter", 1}
@@ -2260,7 +2385,7 @@
 {"craft", "small-electric-pole", 1}
 {"walk", {x=-18.05859375, y=52.9609375}}
 {"walk", {x=-63.95703125, y=79.1171875}}
-{"take", {x=-66.5, y=81.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-66.5, y=81.5}, "item", count, false, defines.inventory.furnace_result}
 {"craft", "stone-furnace", 1}
 {"walk", {x=-13.43359375, y=83.7578125}}
 {"build", {x=2, y=74}, "stone-furnace", 0}
@@ -2458,16 +2583,16 @@
 {"walk", {x=-13.46875, y=74.09375}}
 {"walk", {x=-17.4765625, y=74.28125}}
 {"walk", {x=-18.7421875, y=46.5}}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-20, y=47}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-18.7421875, y=29.28125}}
 {"craft", "electric-mining-drill", 1}
 {"craft", "steam-engine", 1}
@@ -2490,8 +2615,7 @@
 {"build", {x=-23.5, y=-30.5}, "steam-engine", 0}
 {"build", {x=-20.5, y=-25.5}, "steam-engine", 0}
 {"craft", "steam-engine", 1}
-{"craft", "pipe", 1}
-{"craft", "pipe", 1}
+{"craft", "pipe", 5}
 {"walk", {x=-17.375, y=-22.609375}}
 {"build", {x=-18.5, y=-22.5}, "small-electric-pole", 0}
 {"build", {x=-18.5, y=-29.5}, "small-electric-pole", 0}
@@ -3012,75 +3136,75 @@
 {"build", {x=-27.5, y=150.5}, "small-electric-pole", 0}
 {"walk", {x=-33.31640625, y=127.015625}}
 {"walk", {x=-64.37109375, y=82.6875}}
-{"put", "small-electric-pole", count, {x=-65, y=81}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-66, y=83}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-68, y=82}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-67, y=80}, defines.inventory.**inventory**}
-{"take", {x=-66.5, y=81.5}, "item", count, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-65, y=81}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-66, y=83}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-68, y=82}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-67, y=80}, defines.inventory.fuel}
+{"take", {x=-66.5, y=81.5}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-23.89453125, y=46.515625}}
 {"walk", {x=-23.89453125, y=27.3671875}}
-{"take", {x=-20, y=47}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=45}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=43}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=41}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=39}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=37}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=35}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=33}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=31}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-20, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=29}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=27}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-20, y=47}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=45}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=43}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=41}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=39}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=37}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=37}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=35}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=35}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=33}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=33}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=31}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=31}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-20, y=29}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=29}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=27}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-23.70703125, y=23.2109375}}
 {"walk", {x=-18.94140625, y=16.0234375}}
-{"take", {x=-17, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=14}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-25, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-23, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-21, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-19, y=12}, "item", count, defines.inventory.**inventory**}
-{"take", {x=-17, y=12}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-17, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-19, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-21, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-23, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=14}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-25, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-23, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-21, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-19, y=12}, "item", count, false, defines.inventory.furnace_result}
+{"take", {x=-17, y=12}, "item", count, false, defines.inventory.furnace_result}
 {"walk", {x=-23.74609375, y=27.69921875}}
 {"walk", {x=-23.74609375, y=47.73828125}}
-{"put", "small-electric-pole", count, {x=-27, y=27}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=27}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=29}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=29}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=29}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=29}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=31}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=31}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=31}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=31}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=33}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=33}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=33}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=33}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=35}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=35}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=35}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=35}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-27, y=37}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-25, y=37}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=37}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=37}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=39}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=39}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=41}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=41}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=43}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=43}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=45}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=45}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-20, y=47}, defines.inventory.**inventory**}
-{"put", "small-electric-pole", count, {x=-22, y=47}, defines.inventory.**inventory**}
+{"put", "coal", 5, {x=-27, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=27}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=29}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=31}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=33}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=35}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-27, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-25, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=37}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=39}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=41}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=43}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=45}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-20, y=47}, defines.inventory.fuel}
+{"put", "coal", 5, {x=-22, y=47}, defines.inventory.fuel}
 {"walk", {x=-14.40234375, y=59.90625}}
 {"walk", {x=-8.02734375, y=64.015625}}
 {"walk", {x=1.07421875, y=75.62890625}}
@@ -4393,7 +4517,7 @@
 {"build", {x=-29.5, y=14.5}, "transport-belt", 6}
 {"build", {x=-30.5, y=14.5}, "transport-belt", 6}
 {"build", {x=-31.5, y=14.5}, "transport-belt", 6}
-{"take", {x=-6.5, y=40.5}, "item", count, defines.inventory.**inventory**}
+{"take", {x=-6.5, y=40.5}, "item", count, false, defines.inventory.furnace_result}
 {"craft", "electric-mining-drill", 1}
 {"craft", "electric-mining-drill", 1}
 {"mine", {x=12, y=81}}
@@ -5534,7 +5658,6 @@
 {"mine", {x=-9.5, y=102.5}}
 {"build", {x=-7.5, y=101.5}, "small-electric-pole", 0}
 {"build", {x=-8.5, y=102.5}, "iron-chest", 0}
-{"put", "iron-chest", count, {x=-8.5, y=102.5}, defines.inventory.**inventory**}
 {"build", {x=-8.5, y=103.5}, "entity-ghost", 0}
 {"craft", "iron-chest", 1}
 {"craft", "iron-chest", 1}
@@ -5690,7 +5813,7 @@
 {"mine", {x=-5.3125, y=156.625}}
 {"mine", {x=-10.8125, y=158.125}}
 {"mine", {x=-5.4375, y=159}}
-{"mine", {x=0.375, y=158.562}5}
+{"mine", {x=0.375, y=158.562}}
 {"mine", {x=1.875, y=159.625}}
 {"mine", {x=-2.75, y=159.6875}}
 {"mine", {x=-4.25, y=159.9375}}
@@ -6085,7 +6208,7 @@
 {"build", {x=-11.544921875, y=206.5}, "pipe-to-ground", 6}
 {"build", {x=-12.400390625, y=206.400390625}, "pipe", 0}
 {"mine", {x=-8.4375, y=210.25}}
-{"mine", {x=-6.75, y=212.125}}}
+{"mine", {x=-6.75, y=212.125}}
 {"mine", {x=-5.4375, y=212.25}}
 {"build", {x=20.5, y=207.5}, "small-electric-pole", 0}
 {"build", {x=13.5, y=207.5}, "small-electric-pole", 0}
