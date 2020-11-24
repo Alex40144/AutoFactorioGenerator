@@ -1,11 +1,5 @@
 data:extend{
     {
-    type = "custom-input",
-    name = "log-walk",
-    key_sequence = "SHIFT + 1",
-    consuming = "none"
-    },
-    {
         type = "custom-input",
         name = "log-put",
         key_sequence = "SHIFT + 2",

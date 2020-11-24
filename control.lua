@@ -1,13 +1,5 @@
 require "util"
 
-
-
-script.on_event("log-walk", function(event)
-    position = game.players[1].position
-    game.print("walk to" .. serpent.line(position))
-    game.write_file("tasks.txt", "{\"walk\", {x=" .. position.x .. ", y=" .. position.y .. "}}\n", true)
-end)
-
 script.on_event(defines.events.on_built_entity, function(event)
     position = event.created_entity.bounding_box
     position = {x = (position.right_bottom.x + position.left_top.x) / 2 , y = (position.right_bottom.y + position.left_top.y) / 2}

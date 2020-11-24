@@ -4,7 +4,7 @@
 
 
 def generate_lua_tasks():
-    import os, shutil
+    import os
     tasks = []
 
     basepath = os.path.dirname(__file__)
@@ -19,10 +19,11 @@ def generate_lua_tasks():
 
     #add necessary formattting to create table for lua
     for i in range(0, len(tasks)):
-        tasks[i] = "task[" + str(i) + "] = " + tasks[i]
+        tasks[i] = "task[#task+1] = " + tasks[i]
 
     #add info for lua
-    tasks.insert(0, "local task = {}")
+    tasks.insert(0, "task[0] = {\"research\"}") #this becomes line 2
+    tasks.insert(0, "local task = {}") # this becomes line 1
     tasks.append("return task")
 
     luafile = open(luafile, "w")
@@ -33,7 +34,6 @@ def generate_lua_tasks():
     luafile.close()
 
     print("updated tasks.lua")
-    shutil.copy("tasks.lua", r'C:\Users\giddy\Desktop\repos\AutoFactorio')
 
 if __name__ == "__main__":
     generate_lua_tasks()
