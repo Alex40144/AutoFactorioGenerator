@@ -31,7 +31,7 @@ script.on_event("log-put", function(event)
     position = p.selected.bounding_box
     position = {x = (position.right_bottom.x + position.left_top.x) / 2 , y = (position.right_bottom.y + position.left_top.y) / 2}
     game.print("put item into " .. serpent.line(position))
-    game.write_file("tasks.txt", "{\"put\", \"" .. item .. "\", count, {x=" .. position.x .. ", y=" .. position.y .. "}, defines.inventory.**inventory**}\n", true)
+    game.write_file("tasks.txt", "{\"put\", \"" .. "item" .. "\", count, {x=" .. position.x .. ", y=" .. position.y .. "}, defines.inventory.**inventory**}\n", true)
 end)
 
 script.on_event("log-take", function(event)
