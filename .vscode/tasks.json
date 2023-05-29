@@ -1,12 +1,19 @@
 {
-    "version": "0.1.0",
-    "command": "cmd",
-    "isShellCommand": true,
-    "showOutput": "always",
-    "echoCommand": true,
-    "suppressTaskName": true,
-    "args": [
-        "/C"
-    ],
-    "tasks": []
+  "version": "2.0.0",
+  "command": "cmd",
+  "echoCommand": true,
+  "args": ["/C"],
+  "tasks": [
+    {
+      "label": "cmd",
+      "type": "shell",
+      "command": "cmd",
+      "args": ["/C"],
+      "problemMatcher": [],
+      "group": {
+        "_id": "build",
+        "isDefault": false
+      }
+    }
+  ]
 }
